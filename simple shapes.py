@@ -1,5 +1,14 @@
 import pgzrun
+import pgzero.screen
+import pgzero.actor
+import pgzero.rect
 from random import randint
+
+
+
+screen: pgzero.screen.Screen
+Actor  = pgzero.actor.Actor
+Rect = pgzero.rect.Rect
 
 WIDTH = 300
 HEIGHT = 300
@@ -13,14 +22,14 @@ def draw():
 
 
     for i in range(20):
-        rect = pgzrun.Rect((0,0), (width , height))
+        rect = Rect(0,150,width, height)
         rect.center = 150,150
-        pgzrun.screen.draw.rect(rect(r,g,b))
+        screen.draw.rect(rect=rect , color=(r,g,b))
         
         r -=10
         g+=10
         width-=10
         height+=10
-        pgzrun.screen.draw.filled_rect(rect(r,g,b))
+        screen.draw.rect(rect=rect , color=(r,g,b))
 
 pgzrun.go()   
