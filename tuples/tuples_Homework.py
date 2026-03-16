@@ -1,0 +1,45 @@
+
+print("Group 1 \n")
+groupName1 = input("Type the name of the group-->")
+sizeOfGroup1 = input("Type the size of your group-->")
+dateOfComp1 = input("Type the date of the competition here-->")
+venue1 = input("Type the venue here-->")
+typeOfMedal1 = input("Type the type of the medal-->\n")
+group1 = (groupName1, sizeOfGroup1, dateOfComp1, venue1,typeOfMedal1 )
+
+print("Group 2 \n")
+groupName2 = input("Type the name of the group-->")
+sizeOfGroup2 = input("Type the size of your group-->")
+dateOfComp2 = input("Type the date of the competition here-->")
+venue2 = input("Type the venue here-->")
+typeOfMedal2 = input("Type the type of the medal-->\n")
+group2 = (groupName2, sizeOfGroup2, dateOfComp2, venue2,typeOfMedal2 )
+
+print("Group 3 \n")
+groupName3 = input("Type the name of the group-->")
+sizeOfGroup3 = input("Type the size of your group-->")
+dateOfComp3 = input("Type the date of the competition here-->")
+venue3 = input("Type the venue here-->")
+typeOfMedal3 = input("Type the type of the medal-->\n")
+group3 = (groupName3, sizeOfGroup3, dateOfComp3, venue3,typeOfMedal3 )
+
+print("Group 4 \n")
+groupName4 = input("Type the name of the group-->")
+sizeOfGroup4 = input("Type the size of your group-->")
+dateOfComp4 = input("Type the date of the competition here-->")
+venue4 = input("Type the venue here-->")
+typeOfMedal4 = input("Type the type of the medal-->\n")
+group4 = (groupName4, sizeOfGroup4, dateOfComp4, venue4,typeOfMedal4 )
+
+print("Group 5 \n")
+groupName5 = input("Type the name of the group-->")
+sizeOfGroup5 = input("Type the size of your group-->")
+dateOfComp5 = input("Type the date of the competition here-->")
+venue5 = input("Type the venue here-->")
+typeOfMedal5 = input("Type the type of the medal-->\n")
+group5 = (groupName5, sizeOfGroup5, dateOfComp5, venue5,typeOfMedal5 )
+
+for i in range(1,6,1):
+    printingVar = globals()[f"group{i}"]
+    cleaner = " , ".join(printingVar)
+    print(cleaner)
